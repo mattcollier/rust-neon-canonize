@@ -1,0 +1,16 @@
+{
+  "name": "napi-demo-args",
+  "version": "0.1.0",
+  "description": "",
+  "type": "module",
+  "main": "lib/index.js",
+  "author": "Matthew Collier <mcollier@digitalbazaar.com>",
+  "license": "MIT",
+  "dependencies": {
+    "neon-cli": "^0.6.0"
+  },
+  "scripts": {
+    "start": "node --preserve-symlinks ./lib/index.js",
+    "install": "neon build"
+  }
+}

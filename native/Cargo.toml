@@ -1,0 +1,20 @@
+[package]
+name = "napi-demo-args"
+version = "0.1.0"
+authors = ["Matthew Collier <mcollier@digitalbazaar.com>"]
+license = "MIT"
+build = "build.rs"
+edition = "2018"
+exclude = ["artifacts.json", "index.node"]
+
+[lib]
+name = "napi_demo_args"
+crate-type = ["cdylib"]
+
+[build-dependencies]
+neon-build = "0.6.0"
+
+[dependencies.neon]
+version = "0.6.0"
+default-features = false
+features = ["napi-runtime"]
